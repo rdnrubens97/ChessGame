@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using tabuleiro;
 using tabuleiro.Enums;
+using chess_console;
 
 namespace tabuleiro
 {
@@ -18,7 +19,7 @@ namespace tabuleiro
 
         public Peca(Posicao posicao, Tabuleiro tab, Cor cor)
         {
-            this.Posicao = posicao;
+            Posicao = posicao;
             this.Tab = tab;
             this.Cor = cor;
             this.QteMovimentos = 0;

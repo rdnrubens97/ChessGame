@@ -1,0 +1,26 @@
+﻿using tabuleiro;
+
+namespace chess_console
+{
+    internal class Tela
+    {
+        public static void ImprimirTabuleiro(Tabuleiro tab)
+        {
+            for (int i = 1; i <= tab.Linhas; i += 1)
+            {
+                for (int j = 1; j <= tab.Colunas; j += 1)
+                {
+                    if (tab.Peca(i, j) == null)
+                    {
+                        Console.Write("- ");
+                    }
+                    else
+                    {
+                        Console.Write($"{tab.Peca(i, j)} ");
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}

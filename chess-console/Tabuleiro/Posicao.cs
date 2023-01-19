@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using chess_console;
+
 
 namespace tabuleiro
 {
     internal class Posicao
     {
-        public int Linha { get; set; }
-        public int Coluna { get; set; }
+        public double Linha { get; set; }
+        public double Coluna { get; set; }
 
-        public Posicao(int linha, int coluna)
+        public Posicao(double linha, double coluna)
         {
-            Linha = linha;
-            Coluna = coluna;
+            this.Linha = linha;
+            this.Coluna = coluna;
         }
 
         public override string ToString()

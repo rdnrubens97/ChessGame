@@ -1,9 +1,12 @@
 ﻿using tabuleiro;
+using chess_console;
 
-Posicao ponto = new Posicao(2, 3);
 
-Console.WriteLine(ponto);
 
-Tabuleiro tab = new Tabuleiro(8, 8);
+
+Tabuleiro tab = new Tabuleiro(10, 10);
+
+Tela.ImprimirTabuleiro(tab);
+
 
 
