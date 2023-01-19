@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Tabuleiro;
+
+Posicao ponto = new Posicao(2, 3);
+
+Console.WriteLine(ponto);
