@@ -6,9 +6,9 @@ namespace chess_console
     {
         public static void ImprimirTabuleiro(Tabuleiro tab)
         {
-            for (int i = 1; i <= tab.Linhas; i += 1)
+            for (int i = 0; i < tab.Linhas; i += 1)
             {
-                for (int j = 1; j <= tab.Colunas; j += 1)
+                for (int j = 0; j < tab.Colunas; j += 1)
                 {
                     if (tab.Peca(i, j) == null)
                     {

@@ -10,10 +10,10 @@ namespace tabuleiro
 {
     internal class Posicao
     {
-        public double Linha { get; set; }
-        public double Coluna { get; set; }
+        public int Linha { get; set; }
+        public int Coluna { get; set; }
 
-        public Posicao(double linha, double coluna)
+        public Posicao(int linha, int coluna)
         {
             this.Linha = linha;
             this.Coluna = coluna;

@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tabuleiro.Enums
+namespace tabuleiro.Enums;
+
+internal enum Cor
 {
-    internal enum Cor
-    {
-        Branca,
-        Preta,
-        Amarela,
-        Azul,
-        Vermelha,
-        Laranja,
-    }
+    Branca,
+    Preta,
+    Amarela,
+    Azul,
+    Vermelha,
+    Laranja,
 }
