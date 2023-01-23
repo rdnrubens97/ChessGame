@@ -14,10 +14,18 @@ namespace chess_console
             ImprimirPecasCapturadas(partida);
             Console.WriteLine();
             Console.WriteLine($"Turno: {partida.Turno}");
-            Console.WriteLine($"Aguardando jogada: {partida.JogadorAtual}");
-            if (partida.Xeque)
+            if (!partida.Terminada)
             {
-                Console.WriteLine("XEQUE!");
+                Console.WriteLine($"Aguardando jogada: {partida.JogadorAtual}");
+                if (partida.Xeque)
+                {
+                    Console.WriteLine("XEQUE!");
+                }
+            }
+            else
+            {
+                Console.WriteLine("XEQUEMATE!");
+                Console.WriteLine(($"Vencedor: {partida.JogadorAtual}."));
             }
         }
 
@@ -53,7 +61,7 @@ namespace chess_console
                 Console.Write($"{8 - i} ");
                 for (int j = 0; j < tab.Colunas; j += 1)
                 {
-                    ImprimirPeca(tab.Peca(i, j));                    
+                    ImprimirPeca(tab.Peca(i, j));
                 }
                 Console.WriteLine();
             }
@@ -64,7 +72,7 @@ namespace chess_console
         {
 
             ConsoleColor FundoOriginal = Console.BackgroundColor;
-            ConsoleColor FundoAlterado = ConsoleColor.DarkGray;  
+            ConsoleColor FundoAlterado = ConsoleColor.DarkGray;
 
             for (int i = 0; i < tab.Linhas; i += 1)
             {
